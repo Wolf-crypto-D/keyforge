@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wolf-crypto-d.github.io/keyforge/sitemap.xml
