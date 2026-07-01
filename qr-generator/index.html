@@ -43,17 +43,33 @@ height:220
 }
   document.getElementById("downloadBtn").onclick = function () {
 
-const img = document.querySelector("#qrcode img");
+const canvas = document.querySelector("#qrcode canvas");
 
-if (!img) {
-alert("Please generate a QR Code first.");
+if(canvas){
+
+const a=document.createElement("a");
+a.href=canvas.toDataURL("image/png");
+a.download="keyforge-qr.png";
+a.click();
+
 return;
+
 }
 
-const a = document.createElement("a");
-a.href = img.src;
-a.download = "keyforge-qr.png";
+const img=document.querySelector("#qrcode img");
+
+if(img){
+
+const a=document.createElement("a");
+a.href=img.src;
+a.download="keyforge-qr.png";
 a.click();
+
+return;
+
+}
+
+alert("Generate a QR Code first.");
 
 };
   
