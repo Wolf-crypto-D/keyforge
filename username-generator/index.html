@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Username Generator | KeyForge</title>
 
+<style>
+
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#0f172a;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+color:#fff;
+}
+
+.container{
+background:#1e293b;
+padding:30px;
+border-radius:15px;
+width:360px;
+text-align:center;
+box-shadow:0 0 20px rgba(0,0,0,.4);
+}
+
+h1{
+margin-top:0;
+}
+
+input{
+width:100%;
+padding:12px;
+font-size:16px;
+border:none;
+border-radius:8px;
+margin-bottom:15px;
+box-sizing:border-box;
+}
+
+button{
+padding:12px 20px;
+margin:5px;
+border:none;
+border-radius:8px;
+background:#3b82f6;
+color:white;
+cursor:pointer;
+font-size:15px;
+}
+
+button:hover{
+background:#2563eb;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>Username Generator</h1>
+
+<input id="username" readonly>
+
+<br>
+
+<button onclick="generate()">Generate</button>
+
+<button onclick="copyUser()">Copy</button>
+
+</div>
+
+<script>
+
+const words1=[
+"Dark","Shadow","Crazy","Royal","Epic","Ghost","Alpha","Wolf","Fire","Silent",
+"King","Legend","Toxic","Nova","Cyber","Storm","Night","Ultra","Iron","Frost"
+];
+
+const words2=[
+"Gaming","Boy","Girl","YT","OP","X","Pro","Master","Hunter","Playz",
+"Live","Zone","Boss","Army","Fox","Tiger","Dragon","Knight","Ninja","Hero"
+];
+
+function generate(){
+
+let name=
+words1[Math.floor(Math.random()*words1.length)]
++
+words2[Math.floor(Math.random()*words2.length)]
++
+Math.floor(Math.random()*1000);
+
+document.getElementById("username").value=name;
+
+}
+
+function copyUser(){
+
+const box=document.getElementById("username");
+
+box.select();
+
+document.execCommand("copy");
+
+alert("Username Copied!");
+
+}
+
+generate();
+
+</script>
+
+</body>
+</html>
