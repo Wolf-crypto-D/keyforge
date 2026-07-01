@@ -28,7 +28,9 @@ Download QR
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
 <script>
-function generateQR(){
+function generateQR(){setTimeout(function(){
+document.getElementById("downloadBtn").style.display="inline-block";
+},300);
 
 document.getElementById("qrcode").innerHTML="";
 
