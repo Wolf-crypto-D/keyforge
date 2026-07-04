@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Age Calculator | KeyForge</title>
 
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0f172a;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+color:#fff;
+padding:20px;
+}
+
+.container{
+background:#1e293b;
+padding:30px;
+border-radius:15px;
+width:100%;
+max-width:420px;
+text-align:center;
+box-shadow:0 0 20px rgba(0,0,0,.4);
+}
+
+.home{
+display:inline-block;
+margin-bottom:20px;
+padding:10px 18px;
+background:#2563eb;
+color:#fff;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+h1{
+margin-bottom:20px;
+}
+
+input{
+width:100%;
+padding:12px;
+border:none;
+border-radius:8px;
+margin:15px 0;
+font-size:16px;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#2563eb;
+color:#fff;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+background:#1d4ed8;
+}
+
+.result{
+margin-top:20px;
+font-size:20px;
+font-weight:bold;
+line-height:1.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<a class="home" href="../index.html">🏠 Home</a>
+
+<h1>🎂 Age Calculator</h1>
+
+<input type="date" id="dob">
+
+<button onclick="calculateAge()">Calculate Age</button>
+
+<div class="result" id="result"></div>
+
+</div>
+
+<script>
+
+function calculateAge(){
+
+const dob=document.getElementById("dob").value;
+
+if(!dob){
+alert("Please select your Date of Birth");
+return;
+}
+
+const birth=new Date(dob);
+const today=new Date();
+
+let years=today.getFullYear()-birth.getFullYear();
+let months=today.getMonth()-birth.getMonth();
+let days=today.getDate()-birth.getDate();
+
+if(days<0){
+months--;
+const lastMonth=new Date(today.getFullYear(),today.getMonth(),0);
+days+=lastMonth.getDate();
+}
+
+if(months<0){
+years--;
+months+=12;
+}
+
+document.getElementById("result").innerHTML=
+`🎉 <br>${years} Years<br>${months} Months<br>${days} Days`;
+
+}
+
+</script>
+
+</body>
+</html>
