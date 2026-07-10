@@ -648,5 +648,20 @@ input{
 /* ── Reduced motion ── */
 @media (prefers-reduced-motion: reduce) {
   .bg-orb { animation: none; }
+
+   /* =========================
+   Smooth Animations
+========================= */
+
+*{
+    transition:
+    background-color var(--normal),
+    color var(--normal),
+    border-color var(--normal),
+    transform var(--fast),
+    opacity var(--fast),
+    box-shadow var(--fast);
+}
+   
   * { transition-duration: 0.01ms !important; }
 }
