@@ -1,4 +1,43 @@
-/* ── Reset & Base ── */
+/* /* =========================
+   KEYFORGE DESIGN SYSTEM V2
+========================= */
+
+:root {
+
+  /* Colors */
+  --bg: #050816;
+  --bg-secondary: #0d1326;
+
+  --primary: #7c3aed;
+  --secondary: #38bdf8;
+
+  --text: #ffffff;
+  --text-light: #cbd5e1;
+  --border: rgba(255,255,255,0.08);
+
+  /* Glass */
+  --glass: rgba(255,255,255,0.06);
+  --glass-border: rgba(255,255,255,0.12);
+  --blur: 18px;
+
+  /* Shadows */
+  --shadow: 0 10px 40px rgba(0,0,0,.35);
+  --glow: 0 0 30px rgba(124,58,237,.35);
+
+  /* Radius */
+  --radius: 22px;
+
+  /* Animation */
+  --fast: .25s;
+  --normal: .45s;
+  --slow: .8s;
+
+  /* Container */
+  --container: 1280px;
+
+}
+
+── Reset & Base ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
@@ -32,18 +71,46 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
   background: var(--bg);
-  color: var(--text-primary);
-  min-height: 100dvh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 24px 16px;
+  color: var(--text);
+  font-family: "Space Grotesk", sans-serif;
   overflow-x: hidden;
+  min-height: 100vh;
+  transition: background var(--slow), color var(--slow);
 }
 
-/* ── Ambient Orbs ── */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button{
+    font-family:inherit;
+    cursor:pointer;
+    border:none;
+    outline:none;
+}
+
+input{
+    font-family:inherit;
+}/* ── Ambient Orbs ── */
 .bg-orb {
   position: fixed;
   border-radius: 50%;
