@@ -938,3 +938,21 @@ grid-template-columns:repeat(2,1fr)!important;
 }
 
 }
+
+/* TEST GRID FIX */
+
+.stats {
+display: grid !important;
+grid-template-columns: repeat(4, 1fr) !important;
+width: 100% !important;
+}
+
+.stat {
+width: auto !important;
+}
+
+.category-grid {
+display: grid !important;
+grid-template-columns: repeat(5, 1fr) !important;
+width: 100% !important;
+}
