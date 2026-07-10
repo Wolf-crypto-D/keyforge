@@ -925,6 +925,8 @@ grid-template-columns:repeat(5,1fr) !important;
 gap:20px !important;
 }
 
+}
+
 @media(max-width:900px){
 
 .stats{
