@@ -223,6 +223,27 @@ box-shadow:
 0 0 45px rgba(124,58,237,.35);
 }
 
+.card::before{
+content:"";
+position:absolute;
+top:-120%;
+left:-40%;
+width:60%;
+height:300%;
+background:linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.12),
+transparent
+);
+transform:rotate(25deg);
+transition:.8s;
+pointer-events:none;
+}
+
+.card:hover::before{
+left:140%;
+}
 
 /* ── Password Display ── */
 .password-display-wrap {
