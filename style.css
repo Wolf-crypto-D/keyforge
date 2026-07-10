@@ -211,6 +211,19 @@ input{
     0 0 80px rgba(124, 58, 237, 0.06);
 }
 
+transition: .35s ease;
+cursor: pointer;
+overflow: hidden;
+position: relative;
+.card:hover{
+transform:translateY(-12px) scale(1.02);
+border-color:rgba(124,58,237,.45);
+box-shadow:
+0 25px 70px rgba(0,0,0,.55),
+0 0 45px rgba(124,58,237,.35);
+}
+
+
 /* ── Password Display ── */
 .password-display-wrap {
   display: flex;
