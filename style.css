@@ -757,16 +757,18 @@ transform:translateX(-50%) translateY(80px);
 }
 
 /* HERO */
-
 .hero{
-min-height:55vh;
+min-height:100vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:40px 20px;
+padding:0 20px;
+position:relative;
+z-index:2;
 }
+
 
 .hero h1{
 font-size:clamp(55px,10vw,100px);
