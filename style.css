@@ -691,3 +691,33 @@ input{
 ::-webkit-scrollbar-thumb:hover{
     filter: brightness(1.2);
 }
+
+/* Background Glow */
+
+.bg-glow{
+position:fixed;
+top:-250px;
+left:50%;
+transform:translateX(-50%);
+width:700px;
+height:700px;
+background:radial-gradient(circle,
+rgba(124,58,237,.35),
+transparent 70%);
+filter:blur(90px);
+pointer-events:none;
+z-index:-1;
+animation:glowMove 8s ease-in-out infinite;
+}
+
+@keyframes glowMove{
+
+0%,100%{
+transform:translateX(-50%) translateY(0);
+}
+
+50%{
+transform:translateX(-50%) translateY(80px);
+}
+
+}
