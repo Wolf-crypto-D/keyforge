@@ -909,32 +909,3 @@ background-position:200% center;
 
 }
 
-/* ===== FORCE FIX ===== */
-
-.stats{
-display:grid !important;
-grid-template-columns:repeat(4,1fr) !important;
-gap:20px !important;
-max-width:1100px !important;
-margin:80px auto !important;
-}
-
-.category-grid{
-display:grid !important;
-grid-template-columns:repeat(5,1fr) !important;
-gap:20px !important;
-}
-
-}
-
-@media(max-width:900px){
-
-.stats{
-grid-template-columns:repeat(2,1fr)!important;
-}
-
-.category-grid{
-grid-template-columns:repeat(2,1fr)!important;
-}
-
-}
