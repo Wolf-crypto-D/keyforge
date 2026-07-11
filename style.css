@@ -1670,3 +1670,33 @@ transform:translate(-70px,-50px);
 }
 
 }
+
+/* ===== CURSOR GLOW ===== */
+
+.cursor-glow{
+position:fixed;
+top:0;
+left:0;
+
+width:220px;
+height:220px;
+
+border-radius:50%;
+
+background:radial-gradient(
+circle,
+rgba(124,58,237,.18),
+rgba(56,189,248,.10),
+transparent 70%
+);
+
+pointer-events:none;
+
+transform:translate(-50%,-50%);
+
+z-index:99999;
+
+filter:blur(35px);
+
+opacity:.9;
+}
