@@ -911,3 +911,57 @@ background-position:200% center;
 
 }
 
+/* ===== NAVBAR ===== */
+
+.navbar{
+position:fixed;
+top:20px;
+left:50%;
+transform:translateX(-50%);
+width:min(1150px,92%);
+padding:16px 28px;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+background:rgba(15,15,30,.55);
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.08);
+border-radius:18px;
+
+z-index:9999;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:24px;
+font-weight:700;
+color:#fff;
+}
+
+.logo span{
+background:linear-gradient(90deg,#ffffff,#a855f7,#38bdf8);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.nav-links{
+display:flex;
+gap:28px;
+}
+
+.nav-links a{
+color:#cbd5e1;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#38bdf8;
+}
