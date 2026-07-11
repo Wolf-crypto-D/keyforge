@@ -969,3 +969,30 @@ transition:.3s;
 .nav-links a:hover{
 color:#38bdf8;
 }
+
+/* ===== HERO STARS ===== */
+
+.hero::before{
+content:"";
+position:absolute;
+inset:0;
+pointer-events:none;
+opacity:.7;
+
+background:
+radial-gradient(circle at 15% 20%,#fff 1px,transparent 2px),
+radial-gradient(circle at 70% 25%,#fff 1px,transparent 2px),
+radial-gradient(circle at 40% 60%,#fff 1px,transparent 2px),
+radial-gradient(circle at 82% 72%,#fff 1px,transparent 2px),
+radial-gradient(circle at 25% 85%,#fff 1px,transparent 2px);
+
+animation:twinkle 4s ease-in-out infinite;
+}
+
+@keyframes twinkle{
+
+0%,100%{opacity:.35;}
+
+50%{opacity:1;}
+
+}
