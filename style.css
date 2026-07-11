@@ -1797,7 +1797,8 @@ star.className="shooting-star";
 star.style.top=Math.random()*60+"%";
 star.style.left=(Math.random()*100-20)+"%";
 
-const angle=20+Math.random()*50;
+const directions = [35, 45, 55, 125, 135, 145];
+const angle = directions[Math.floor(Math.random() * directions.length)];
 
 star.style.transform=`rotate(${angle}deg)`;
 
