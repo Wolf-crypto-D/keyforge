@@ -996,3 +996,45 @@ animation:twinkle 4s ease-in-out infinite;
 50%{opacity:1;}
 
 }
+
+/* ===== SHOOTING STAR ===== */
+
+.hero::after{
+content:"";
+position:absolute;
+top:18%;
+left:-20%;
+
+width:180px;
+height:2px;
+
+background:linear-gradient(90deg,#fff,transparent);
+
+transform:rotate(-25deg);
+
+animation:shootingStar 7s linear infinite;
+
+opacity:.9;
+}
+
+@keyframes shootingStar{
+
+0%{
+transform:translateX(0) rotate(-25deg);
+opacity:0;
+}
+
+10%{
+opacity:1;
+}
+
+70%{
+opacity:1;
+}
+
+100%{
+transform:translateX(1800px) rotate(-25deg);
+opacity:0;
+}
+
+}
