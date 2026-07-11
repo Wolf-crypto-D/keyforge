@@ -1755,7 +1755,10 @@ background:#fff;
 
 border-radius:50%;
 
-box-shadow:0 0 8px #fff;
+box-shadow:
+0 0 8px #fff,
+0 0 18px rgba(255,255,255,.8),
+0 0 30px rgba(56,189,248,.5);
 
 pointer-events:none;
 
