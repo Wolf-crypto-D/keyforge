@@ -1794,11 +1794,13 @@ const star=document.createElement("div");
 
 star.className="shooting-star";
 
-star.style.top=Math.random()*60+"%";
-star.style.left=(Math.random()*100-20)+"%";
+   star.style.top = Math.random() * 45 + "%";
+
+   star.style.left=(Math.random()*100-20)+"%";
 
 const directions = [35, 45, 55, 125, 135, 145];
-const angle = directions[Math.floor(Math.random() * directions.length)];
+
+   const angle = directions[Math.floor(Math.random() * directions.length)];
 
 star.style.transform=`rotate(${angle}deg)`;
 
