@@ -1602,3 +1602,71 @@ transform:translateY(-5px);
 border-color:#38bdf8;
 box-shadow:0 0 25px rgba(56,189,248,.35);
 }
+
+/* ===== PURPLE NEBULA ===== */
+
+body::before{
+content:"";
+position:fixed;
+top:-250px;
+left:-250px;
+
+width:700px;
+height:700px;
+
+background:
+radial-gradient(circle,
+rgba(124,58,237,.22),
+transparent 70%);
+
+pointer-events:none;
+z-index:-2;
+filter:blur(70px);
+
+animation:nebulaMove 16s ease-in-out infinite;
+}
+
+body::after{
+content:"";
+position:fixed;
+bottom:-250px;
+right:-250px;
+
+width:650px;
+height:650px;
+
+background:
+radial-gradient(circle,
+rgba(56,189,248,.18),
+transparent 70%);
+
+pointer-events:none;
+z-index:-2;
+filter:blur(70px);
+
+animation:nebulaMove2 18s ease-in-out infinite;
+}
+
+@keyframes nebulaMove{
+
+0%,100%{
+transform:translate(0,0);
+}
+
+50%{
+transform:translate(60px,40px);
+}
+
+}
+
+@keyframes nebulaMove2{
+
+0%,100%{
+transform:translate(0,0);
+}
+
+50%{
+transform:translate(-70px,-50px);
+}
+
+}
