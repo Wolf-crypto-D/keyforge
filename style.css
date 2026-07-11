@@ -1828,3 +1828,4 @@ setTimeout(createShootingStar,3000+Math.random()*9000);
 }
 
 createShootingStar();
+
