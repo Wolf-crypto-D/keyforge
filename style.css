@@ -1741,3 +1741,44 @@ transform:scale(1.8);
 }
 
 }
+
+/* ===== SHOOTING STAR ===== */
+
+.shooting-star{
+
+position:fixed;
+
+width:2px;
+height:2px;
+
+background:#fff;
+
+border-radius:50%;
+
+box-shadow:0 0 8px #fff;
+
+pointer-events:none;
+
+z-index:-1;
+
+}
+
+.shooting-star::after{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:-140px;
+
+width:140px;
+height:2px;
+
+background:linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.9)
+);
+
+}
