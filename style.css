@@ -1796,7 +1796,11 @@ star.className="shooting-star";
 
    star.style.top = Math.random() * 45 + "%";
 
-   star.style.left=(Math.random()*100-20)+"%";
+   if(angle < 90){
+    star.style.left = "-15%";
+}else{
+    star.style.left = "110%";
+}
 
 const directions = [35, 45, 55, 125, 135, 145];
 
