@@ -815,6 +815,7 @@ position:relative;
 z-index:2;
 overflow:hidden;
 isolation:isolate;
+   overflow:hidden;
 }
 
 
