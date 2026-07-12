@@ -870,6 +870,27 @@ transform:translateY(-8px);
 box-shadow:0 0 35px rgba(124,58,237,.35);
 }
 
+.stat::before{
+content:"";
+position:absolute;
+top:-100%;
+left:-50%;
+width:60%;
+height:300%;
+background:linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.12),
+transparent
+);
+transform:rotate(25deg);
+transition:.8s;
+}
+
+.stat:hover::before{
+left:120%;
+}
+
 .stat h2{
 font-size:42px;
 margin-bottom:10px;
