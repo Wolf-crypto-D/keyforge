@@ -861,6 +861,8 @@ border-radius:20px;
 padding:30px;
 text-align:center;
 transition:.35s;
+   position:relative;
+overflow:hidden;
 }
 
 .stat:hover{
