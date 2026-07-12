@@ -1977,3 +1977,16 @@ transition:.3s;
 color:#7c3aed;
 text-shadow:0 0 10px rgba(124,58,237,.6);
 }
+
+.mouse-particle{
+position:fixed;
+width:6px;
+height:6px;
+border-radius:50%;
+background:white;
+pointer-events:none;
+box-shadow:
+0 0 8px #fff,
+0 0 15px #7c3aed;
+z-index:99999;
+}
