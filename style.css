@@ -832,7 +832,7 @@ text-shadow:
 background:linear-gradient(90deg,#ffffff,#b794f4,#60a5fa);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
-   animation:heroGlow 4s ease-in-out infinite alternate;
+   animation:heroGlow 4s ease-in-out infinite alternate, heroFloat 6s ease-in-out infinite;
 }
 
 .hero p{
