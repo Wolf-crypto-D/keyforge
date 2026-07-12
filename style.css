@@ -2002,12 +2002,12 @@ padding:18px;
 }
 
 .nav-links{
-display:flex;
-flex-wrap:wrap;
+display:grid;
+grid-template-columns:repeat(2,auto);
 justify-content:center;
-gap:18px;
+gap:12px 24px;
 }
-
+   
 .hero h1{
 font-size:clamp(42px,12vw,70px);
 letter-spacing:2px;
@@ -2039,4 +2039,13 @@ grid-template-columns:repeat(2,1fr);
 grid-template-columns:1fr;
 }
 
+   .logo{
+justify-content:center;
+width:100%;
+}
+
+   .logo span{
+font-size:28px;
+}
+   
 }
