@@ -959,6 +959,8 @@ border:1px solid rgba(255,255,255,.08);
 backdrop-filter:blur(18px);
 transition:.35s;
 font-weight:600;
+   position:relative;
+overflow:hidden;
 }
 
 .category:hover{
