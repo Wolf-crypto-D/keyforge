@@ -969,6 +969,28 @@ border-color:#7c3aed;
 box-shadow:0 0 30px rgba(124,58,237,.35);
 }
 
+.category::before{
+content:"";
+position:absolute;
+top:-100%;
+left:-60%;
+width:70%;
+height:300%;
+background:linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.10),
+transparent
+);
+transform:rotate(25deg);
+transition:.8s;
+pointer-events:none;
+}
+
+.category:hover::before{
+left:140%;
+}
+
 /* ===== SECTION TITLE ANIMATION ===== */
 
 .categories h2,
