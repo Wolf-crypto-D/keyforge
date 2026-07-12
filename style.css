@@ -1943,3 +1943,37 @@ filter:brightness(1.18);
     transform:translateY(0);
   }
 }
+
+/* ===== FOOTER ===== */
+
+.footer{
+margin-top:100px;
+padding:40px 20px;
+text-align:center;
+border-top:1px solid rgba(255,255,255,.08);
+background:rgba(255,255,255,.03);
+backdrop-filter:blur(15px);
+}
+
+.footer p{
+color:var(--text-light);
+margin-bottom:18px;
+}
+
+.footer-links{
+display:flex;
+justify-content:center;
+gap:28px;
+flex-wrap:wrap;
+}
+
+.footer-links a{
+color:var(--text-light);
+text-decoration:none;
+transition:.3s;
+}
+
+.footer-links a:hover{
+color:#7c3aed;
+text-shadow:0 0 10px rgba(124,58,237,.6);
+}
