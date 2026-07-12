@@ -227,7 +227,9 @@ overflow: hidden;
   box-shadow:
     0 0 0 0.5px rgba(255,255,255,0.04) inset,
     0 20px 60px rgba(0,0,0,0.5),
-    0 0 80px rgba(124, 58, 237, 0.06);
+    0 0transition:.35s ease;
+cursor:pointer; 80px rgba(124, 58, 237, 0.06);
+   
 }
 
 .card::before{
