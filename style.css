@@ -1990,3 +1990,53 @@ box-shadow:
 0 0 15px #7c3aed;
 z-index:99999;
 }
+
+/* ===== MOBILE FIX ===== */
+
+@media (max-width:768px){
+
+.navbar{
+flex-direction:column;
+gap:16px;
+padding:18px;
+}
+
+.nav-links{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:18px;
+}
+
+.hero h1{
+font-size:clamp(42px,12vw,70px);
+letter-spacing:2px;
+}
+
+.hero p{
+font-size:18px;
+padding:0 15px;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.stats{
+grid-template-columns:repeat(2,1fr);
+}
+
+.category-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media (max-width:480px){
+
+.stats,
+.category-grid{
+grid-template-columns:1fr;
+}
+
+}
