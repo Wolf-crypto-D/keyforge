@@ -85,14 +85,6 @@ color:#cbd5e1;
 </head>
 
 <body>
-
-
-</div>
-
-<div class="bg-glow"></div>
-
-<nav class="navbar">
-...
   
 <div class="bg-glow"></div>
 
@@ -231,37 +223,7 @@ document.addEventListener("mousemove",(e)=>{
 
 glow.style.left=e.clientX+"px";
 glow.style.top=e.clientY+"px";
-for(let i=0;i<2;i++){
 
-const p=document.createElement("div");
-
-p.className="mouse-particle";
-
-p.style.left=e.clientX+"px";
-p.style.top=e.clientY+"px";
-
-document.body.appendChild(p);
-
-const x=(Math.random()-0.5)*60;
-const y=(Math.random()-0.5)*60;
-
-p.animate([
-{
-transform:"translate(0,0) scale(1)",
-opacity:1
-},
-{
-transform:`translate(${x}px,${y}px) scale(0)`,
-opacity:0
-}
-],{
-duration:700,
-easing:"ease-out"
-});
-
-setTimeout(()=>p.remove(),700);
-
-}
 });
 
    /* ===== STAR ENGINE ===== */
@@ -290,17 +252,6 @@ stars.appendChild(star);
 }
     
 </script>
-
-  <footer class="footer">
-  <p>© 2026 KeyForge • Built with ❤️ by Anuj</p>
-
-  <div class="footer-links">
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="privacy.html">Privacy</a>
-  </div>
-    
-</footer>
   
 </body>
 </html>
