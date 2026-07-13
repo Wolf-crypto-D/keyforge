@@ -1,3 +1,5 @@
+alert("Cosmic JS Loaded");
+
 const stars=document.getElementById("stars");
 
 if(stars){
